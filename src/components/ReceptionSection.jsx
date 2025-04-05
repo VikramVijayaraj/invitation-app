@@ -48,38 +48,38 @@ export default function ReceptionSection() {
 
         <div className="flex items-center justify-center space-x-5">
           <div className="font-bold text-center">
-            <p className="font-secondary text-5xl">{timeLeft.days}</p>
+            <p className="font-secondary text-4xl">{timeLeft.days}</p>
             <p>Days</p>
           </div>
           <p className="font-secondary font-black">:</p>
 
           <div className="font-bold text-center">
-            <p className="font-secondary text-5xl">{timeLeft.hours}</p>
+            <p className="font-secondary text-4xl">{timeLeft.hours}</p>
             <p>Hours</p>
           </div>
           <p className="font-secondary font-black">:</p>
 
           <div className="font-bold text-center">
-            <p className="font-secondary text-5xl">{timeLeft.minutes}</p>
+            <p className="font-secondary text-4xl">{timeLeft.minutes}</p>
             <p>Minutes</p>
           </div>
           <p className="font-secondary font-black">:</p>
 
           <div className="font-bold text-center">
-            <p className="font-secondary text-5xl">{timeLeft.seconds}</p>
+            <p className="font-secondary text-4xl">{timeLeft.seconds}</p>
             <p>Seconds</p>
           </div>
         </div>
       </div>
 
       <div className="flex items-center justify-center mt-10">
-        <Dialog>
+        <Dialog className="bg-black">
           <DialogTrigger asChild>
             <Button className="cursor-pointer font-secondary tracking-wider p-8">
               RSVP
             </Button>
           </DialogTrigger>
-          <DialogContent className="w-full h-[700px]">
+          <DialogContent className="w-full h-[500px]">
             {/* <DialogHeader>
             <DialogTitle>Are you absolutely sure?</DialogTitle>
             <DialogDescription>

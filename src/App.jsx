@@ -13,9 +13,9 @@ function App() {
       </div>
 
       {/* <div> */}
-      <audio autoPlay loop>
+      {/* <audio autoPlay loop>
         <source src="/music/gorila.mp3" type="audio/mp3" />
-      </audio>
+      </audio> */}
     </div>
     // </div>
   );
