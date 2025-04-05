@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -9,95 +7,42 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import CountdownTimer from "./CountdownTimer";
 
 export default function ReceptionSection() {
-  const receptionDate = new Date("2025-04-18T10:00:00").getTime(); // Target Date
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  function calculateTimeLeft() {
-    const now = new Date().getTime();
-    const difference = receptionDate - now;
-
-    if (difference <= 0) {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-    }
-
-    return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      ),
-      minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-      seconds: Math.floor((difference % (1000 * 60)) / 1000),
-    };
-  }
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <div>
       <div className="flex flex-col items-center justify-center space-y-4">
-        <h2 className="text-4xl">Reception</h2>
+        <h2 className="text-4xl tracking-wide">Reception</h2>
 
         <div className="font-secondary font-bold text-center space-y-2">
-          <p className="text-4xl">April 17, 2025</p>
-          <p className="text-4xl">6:00 PM</p>
+          <p className="text-4xl text-[#ff2056]">May 18, 2025</p>
+          <p className="text-4xl text-[#ff2056]">6:00 - 9:00 PM</p>
         </div>
 
         <div className="text-center">
-          <p className="text-lg">RK Mahal, Sirkazhi Road,</p>
-          <p className="text-lg">Akkurmukutu, Mayiladuthurai - 609301</p>
+          <p className="text-lg">Futsing Building, 2 Allenby Road,</p>
+          <p className="text-lg">#02 - 01 Singapore 209973</p>
         </div>
 
-        <p className="text-lg">time left</p>
+        <p className="text-xl">time remaining</p>
 
-        <div className="flex items-center justify-center space-x-5">
-          <div className="font-bold text-center">
-            <p className="font-secondary text-4xl">{timeLeft.days}</p>
-            <p>Days</p>
-          </div>
-          <p className="font-secondary font-black">:</p>
-
-          <div className="font-bold text-center">
-            <p className="font-secondary text-4xl">{timeLeft.hours}</p>
-            <p>Hours</p>
-          </div>
-          <p className="font-secondary font-black">:</p>
-
-          <div className="font-bold text-center">
-            <p className="font-secondary text-4xl">{timeLeft.minutes}</p>
-            <p>Minutes</p>
-          </div>
-          <p className="font-secondary font-black">:</p>
-
-          <div className="font-bold text-center">
-            <p className="font-secondary text-4xl">{timeLeft.seconds}</p>
-            <p>Seconds</p>
-          </div>
-        </div>
+        <CountdownTimer />
       </div>
 
-      <div className="flex items-center justify-center mt-10">
+      <p className="text-xl text-center mt-12 px-10">
+        We would be honored by your presence as <br /> we celebrate this union
+        of love and <br /> togetherness.
+      </p>
+
+      <div className="flex items-center justify-center mt-6">
         <Dialog className="bg-black">
           <DialogTrigger asChild>
-            <Button className="cursor-pointer font-secondary tracking-wider p-8">
+            <Button className="cursor-pointer font-secondary text-lg tracking-wider px-20 py-8 rounded-xl">
               RSVP
             </Button>
           </DialogTrigger>
           <DialogContent className="w-full h-[550px]">
-            {/* <DialogHeader>
-            <DialogTitle>Are you absolutely sure?</DialogTitle>
-            <DialogDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
-            </DialogDescription>
-          </DialogHeader> */}
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLScS4La5IX7jai9g6NtGQ-q4YtS2fEIVwUW09bmUTvn7Vgsdvw/viewform?embedded=true"
               // width="640"
