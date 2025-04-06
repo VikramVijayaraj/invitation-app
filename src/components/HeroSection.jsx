@@ -18,7 +18,7 @@ export default function HeroSection() {
 
       <div className="mx-12">
         <img
-          src="/images/couple.jpg"
+          src="/images/couple.jpeg"
           alt="Wedding Couple"
           className="h-80 w-full rounded-2xl object-cover"
         />
