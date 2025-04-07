@@ -4,7 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-title: "Tangerine", "cursive";
+  --font-title: "Open Sans", "sans-serif";
+  /* --font-title: "Tangerine", "cursive"; */
   --font-primary: "Dancing Script", "cursive";
   --font-secondary: "Poppins", "sans-serif";
 }

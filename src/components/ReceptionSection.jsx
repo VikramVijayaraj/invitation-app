@@ -16,8 +16,8 @@ export default function ReceptionSection() {
         <h2 className="text-4xl tracking-wide">Reception</h2>
 
         <div className="font-secondary font-bold text-center space-y-2">
-          <p className="text-4xl text-[#ff2056]">May 18, 2025</p>
-          <p className="text-4xl text-[#ff2056]">6:00 - 9:00 PM</p>
+          <p className="text-4xl text-[#fee4d2]">May 18, 2025</p>
+          <p className="text-4xl text-[#fee4d2]">6:00 - 9:00 PM</p>
         </div>
 
         <div className="text-center">
@@ -38,7 +38,7 @@ export default function ReceptionSection() {
       <div className="flex items-center justify-center mt-6">
         <Dialog className="bg-black">
           <DialogTrigger asChild>
-            <Button className="cursor-pointer font-secondary text-lg tracking-wider px-20 py-8 rounded-xl">
+            <Button className="bg-[#fee4d2] text-[#6f000c] cursor-pointer font-secondary text-lg tracking-wider px-20 py-8 rounded-xl">
               RSVP
             </Button>
           </DialogTrigger>

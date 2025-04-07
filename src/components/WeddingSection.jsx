@@ -4,8 +4,8 @@ export default function WeddingSection() {
       <h2 className="text-4xl tracking-wide">Wedding</h2>
 
       <div className="font-secondary font-bold text-center space-y-2">
-        <p className="text-4xl text-[#ff2056]">April 18, 2025</p>
-        <p className="text-4xl text-[#ff2056]">6:00 - 7:30 AM</p>
+        <p className="text-4xl text-[#fee4d2]">April 18, 2025</p>
+        <p className="text-4xl text-[#fee4d2]">6:00 - 7:30 AM</p>
       </div>
 
       <div className="text-center">

@@ -17,25 +17,25 @@ function App() {
   }
 
   return (
-    <div className="relative h-full min-h-screen">
+    <div className="relative h-full min-h-screen bg-[#6f000c] text-[#fee4d2]">
       {/* Background image layer */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: "url('/images/flowers-bg.png')",
-          backgroundSize: "cover",
+          backgroundImage: "url('/images/art-bg.png')",
+          backgroundSize: "contain",
           backgroundPosition: "center",
-          opacity: 0.2,
+          opacity: 0.1,
         }}
       ></div>
 
       {/* Foreground content */}
       <div className="relative z-10">
         {!started ? (
-          <div className="h-screen flex items-center justify-center bg-gradient-to-b from-rose-100 to-white">
+          <div className="h-screen flex items-center justify-center">
             <button
               onClick={handleStartInvitation}
-              className="cursor-pointer px-8 py-4 text-lg font-semibold text-white bg-[#ff2056] rounded-full shadow-lg hover:bg-rose-700 "
+              className="cursor-pointer px-8 py-4 text-lg font-semibold text-[#6f000c] bg-[#fee4d2] rounded-full shadow-lg hover:bg-rose-700 "
             >
               Open Invitation
             </button>
