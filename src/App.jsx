@@ -35,7 +35,7 @@ function App() {
           <div className="h-screen flex items-center justify-center">
             <button
               onClick={handleStartInvitation}
-              className="cursor-pointer px-8 py-4 text-lg font-semibold text-[#6f000c] bg-[#fee4d2] rounded-full shadow-lg hover:bg-rose-700 "
+              className="cursor-pointer px-8 py-4 text-lg font-semibold text-[#6f000c] bg-[#fee4d2] rounded-full shadow-lg hover:bg-white"
             >
               Open Invitation
             </button>
@@ -45,7 +45,7 @@ function App() {
             <div className="flex flex-col items-center justify-center space-y-12">
               <HeroSection />
               <WeddingSection />
-              <div className="w-1/2">
+              <div className="w-1/2 md:w-2/5 lg:w-1/6 opacity-70">
                 <Separator />
               </div>
               <ReceptionSection />

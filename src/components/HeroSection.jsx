@@ -5,12 +5,12 @@ export default function HeroSection() {
         <p className="text-xl px-10 text-center">
           Loganathan - Sudha Family Wedding
         </p>
-        <div className="space-y-4">
-          <p className="text-xl px-10 text-center">
+        <div className="space-y-4 text-xl px-10 md:px-40 lg:px-96 text-center">
+          <p>
             We are overwhelmed with joy as we announce the wedding ceremony of
             our beloved daughter.
           </p>
-          <p className="text-xl px-10 text-center">
+          <p>
             We invite you to join us and bless the couple as they begin their
             new life together.
           </p>
@@ -26,7 +26,7 @@ export default function HeroSection() {
         <img
           src="/images/couple.jpeg"
           alt="Wedding Couple"
-          className="h-80 w-full rounded-2xl object-cover"
+          className="h-80 w-full md:px-40 md:h-[500px] lg:h-[500px] rounded-2xl object-cover lg:object-contain"
         />
       </div>
     </div>
