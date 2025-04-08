@@ -23,9 +23,9 @@ function App() {
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/flowers-bg.jpg')",
-          backgroundSize: "contain",
-          backgroundPosition: "center",
+            "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/flowers-5-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "left",
           filter: "blur(2px)",
         }}
       ></div>
