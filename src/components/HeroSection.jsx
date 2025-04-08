@@ -15,7 +15,7 @@ export default function HeroSection() {
             new life together.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center uppercase font-title tracking-wide text-4xl text-shadow-lg font-[1000] text-center text-[#fee4d2] text-shadow-black">
+        <div className="flex flex-col items-center justify-center uppercase font-title tracking-wide text-4xl text-shadow-lg font-[1000] text-center text-[#fee4d2]">
           <h1 className="">M.Rajarajan</h1>
           <p className="text-xl">&</p>
           <h1 className="">L.Krithika</h1>

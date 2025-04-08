@@ -38,7 +38,7 @@ export default function ReceptionSection() {
       <div className="flex items-center justify-center mt-6">
         <Dialog className="bg-black">
           <DialogTrigger asChild>
-            <Button className="bg-[#fee4d2] text-[#6f000c] cursor-pointer font-secondary text-lg tracking-wider px-20 py-8 rounded-xl">
+            <Button className="bg-[#fee4d2] text-black cursor-pointer font-secondary text-lg tracking-wider px-20 py-8 rounded-xl">
               RSVP
             </Button>
           </DialogTrigger>

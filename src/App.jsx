@@ -23,10 +23,10 @@ function App() {
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/flowers-5-bg.jpg')",
+            "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/flowers-5-bg 2.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "left",
-          filter: "blur(2px)",
+          filter: !started ? "blur(12px)" : "none",
         }}
       ></div>
 
@@ -36,7 +36,7 @@ function App() {
           <div className="h-screen flex items-center justify-center">
             <button
               onClick={handleStartInvitation}
-              className="cursor-pointer px-8 py-4 text-lg font-semibold text-[#6f000c] bg-[#fee4d2] rounded-full shadow-lg hover:bg-white"
+              className="cursor-pointer px-8 py-4 text-lg font-semibold text-black bg-[#fee4d2] rounded-full shadow-lg hover:bg-white"
             >
               Open Invitation
             </button>
