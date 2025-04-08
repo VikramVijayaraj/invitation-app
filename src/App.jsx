@@ -10,7 +10,7 @@ function App() {
   const [started, setStarted] = useState(false);
 
   function handleStartInvitation() {
-    const audio = new Audio("/music/bgm-1.mp3");
+    const audio = new Audio("/music/bgm.mpeg");
     audio.loop = true;
     audio.play();
     setStarted(true);
