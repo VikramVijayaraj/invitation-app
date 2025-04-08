@@ -15,14 +15,14 @@ export default function ReceptionSection() {
       <div className="flex flex-col items-center justify-center space-y-4">
         <h2 className="text-4xl tracking-wide">Reception</h2>
 
-        <div className="font-secondary font-bold text-center space-y-2">
-          <p className="text-4xl text-[#fee4d2]">May 18, 2025</p>
-          <p className="text-4xl text-[#fee4d2]">6:00 - 9:00 PM</p>
+        <div className="font-secondary font-bold text-center space-y-2 text-4xl text-[#fee4d2]">
+          <p>May 18, 2025</p>
+          <p>6:00 - 9:00 PM</p>
         </div>
 
-        <div className="text-center">
-          <p className="text-lg">Futsing Building, 2 Allenby Road,</p>
-          <p className="text-lg">#02 - 01 Singapore 209973</p>
+        <div className="text-center text-2xl font-black">
+          <p>Futsing Building, 2 Allenby Road,</p>
+          <p>#02 - 01 Singapore 209973</p>
         </div>
 
         <p className="text-xl">time remaining</p>
@@ -58,7 +58,7 @@ export default function ReceptionSection() {
         </Dialog>
       </div>
 
-      <p className="text-lg font-secondary text-center mt-4">
+      <p className="text-lg font-secondary text-center mt-4 font-bold">
         To Sugan Raj at 8118 1414
       </p>
     </div>

@@ -10,22 +10,23 @@ function App() {
   const [started, setStarted] = useState(false);
 
   function handleStartInvitation() {
-    const audio = new Audio("/music/bgm.mp3");
+    const audio = new Audio("/music/bgm-1.mp3");
     audio.loop = true;
     audio.play();
     setStarted(true);
   }
 
   return (
-    <div className="relative h-full min-h-screen bg-[#6f000c] text-[#fee4d2]">
+    <div className="relative h-full min-h-screen text-white">
       {/* Background image layer */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: "url('/images/art-bg.png')",
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/flowers-bg.jpg')",
           backgroundSize: "contain",
           backgroundPosition: "center",
-          opacity: 0.1,
+          filter: "blur(2px)",
         }}
       ></div>
 
