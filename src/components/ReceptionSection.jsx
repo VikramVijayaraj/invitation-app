@@ -57,6 +57,10 @@ export default function ReceptionSection() {
           </DialogContent>
         </Dialog>
       </div>
+
+      <p className="text-lg font-secondary text-center mt-4">
+        To Sugan Raj at 8118 1414
+      </p>
     </div>
   );
 }

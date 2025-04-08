@@ -2,8 +2,8 @@ export default function HeroSection() {
   return (
     <div className="space-y-10">
       <div className="flex flex-col items-center justify-center space-y-6">
-        <p className="text-xl px-10 text-center">
-          Loganathan - Sudha Family Wedding
+        <p className="text-3xl font-black px-10 text-center">
+          Loganathan - Sudha <br /> Daughter's Wedding
         </p>
         <div className="space-y-4 text-xl px-10 md:px-40 lg:px-96 text-center">
           <p>
