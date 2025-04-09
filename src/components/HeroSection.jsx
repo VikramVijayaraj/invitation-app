@@ -26,7 +26,7 @@ export default function HeroSection() {
         <img
           src="/images/couple.jpeg"
           alt="Wedding Couple"
-          className="h-full w-full md:px-40 md:h-[500px] lg:h-[500px] rounded-2xl object-cover lg:object-contain"
+          className="h-80 w-full md:px-40 md:h-[500px] lg:h-[500px] rounded-2xl object-cover lg:object-contain"
         />
       </div>
     </div>
