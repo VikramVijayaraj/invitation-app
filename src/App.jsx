@@ -7,7 +7,7 @@ import WeddingSection from "./components/WeddingSection";
 import { Separator } from "@/components/ui/separator";
 
 function App() {
-  const [started, setStarted] = useState(false);
+  const [started, setStarted] = useState(true); // should be false by default
 
   function handleStartInvitation() {
     const audio = new Audio("/music/bgm.mp3");
