@@ -5,13 +5,13 @@ export default function HeroSection() {
         <p className="text-3xl font-black px-10 text-center">
           Sthapathi V.Loganathan <br /> - Sudha <br /> Daughter's Wedding
         </p>
-        <div className="space-y-4 text-xl px-10 md:px-40 lg:w-3/4 text-center">
+        <div className="space-y-4 text-xl px-10 text-center">
           <p>
-            We are overwhelmed with joy as we announce the wedding ceremony of
+            We are overwhelmed with joy as we <br /> announce the wedding ceremony of
             our beloved daughter.
           </p>
           <p>
-            We invite you to join us and bless the couple as they begin their
+            We invite you to join us and bless the <br /> couple as they begin their
             new life together.
           </p>
         </div>
